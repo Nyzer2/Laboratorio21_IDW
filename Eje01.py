@@ -6,7 +6,7 @@ class Figura:
         pass
 
 class Rectangulo:
-    def _init_(self,base,altura):
+    def __init__(self,base,altura):
         self.base=base
         self.altura=altura
     def perimetro(self):
@@ -15,7 +15,7 @@ class Rectangulo:
         return self.altura*self.base
 
 class Triangulo:
-    def _init_(self,base,altura):
+    def __init__(self,base,altura):
         self.base=base
         self.altura=altura
     def perimetro(self):
@@ -25,7 +25,7 @@ class Triangulo:
         return self.base*self.altura/2
     
 class Circulo:
-    def _init_(self,radio):
+    def __init__(self,radio):
         self.radio=radio
     def perimetro(self):
         return math.pi*self.radio*2
